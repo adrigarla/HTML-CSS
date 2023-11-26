@@ -1,0 +1,870 @@
+@font-face {
+    font-family: 'svampira';
+    src: url(./fonts/hinted-GWENT-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: 'svampira2';
+    src: url(./fonts/hinted-GWENT-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: 'snormal';
+    src: url(./fonts/hinted-HalisGR-Bold.woff2);
+}
+
+
+@font-face {
+    font-family: 'fina';
+    src: url(./fonts/hinted-HalisGR-Book.woff2);
+}
+
+@font-face {
+    font-family: 'finax2';
+    src: url(./fonts/hinted-HalisGR-Light.woff2);
+}
+
+html{
+    background-color: black;
+    height: 100%;
+    body{
+        >header{
+            background-image: url(./img/large_back.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+
+            ul{
+                background-image: url(./img/menu_bg.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li{
+                    text-transform: uppercase;
+                    font-family: snormal;
+                    font-size: 30px;
+                    color: black;
+                    text-shadow: red 0px 1px 4px;
+                }
+
+                li:first-child{
+                    position: relative;
+                    background-image: url(./img/blacksun_logo.png);
+                    background-size: cover;
+                    background-position: left center;
+                    height: 100px;
+                    width: 100px;
+                    margin-right: 1%;
+                }
+
+                li:not(:first-child) {
+                    margin-right: 4%;
+                }
+
+                li:last-child{
+                    margin-left: 5%;
+                }
+            }
+
+            section:first-of-type{
+                color: white;
+                display: flex;
+                flex-direction: column;
+                margin-left: 70%;
+
+                h1{
+                    background-image: url(./img/silver-button.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    text-transform: uppercase;
+                    font-family: snormal;
+                    font-size: 25px;
+                    color: black;
+                    text-shadow: red 0px 1px 4px;
+
+                    height: 100px;
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 22px;
+                    font-family: fina;
+                }
+            }
+
+            .offers{
+                color:white;
+
+                article{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 150px;
+                    div{
+                        margin-left: 30px;
+                        h2{
+                            text-transform: uppercase;
+                            color: rgb(180, 41, 41);
+                            font-family: svampira;
+                            font-size: 45px;
+                            text-align: center;
+
+                            &::after{
+                                content: "";
+                                background-image: url(./img/separator.png);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                background-position: center ;
+                                display: block;
+                                height: 100px;
+                               
+                            }
+                        }
+
+                        main{
+                            p{
+                                width: 400px;
+                                font-size: 20px;
+                                font-family: fina;
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    img{
+                        width: 600px;
+                        height: 338px;
+                    }
+                }
+
+                article:last-child{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    
+                    div{
+                        width: 400px;
+                        margin-right: 25px;
+                        main{
+                            p{
+                                font-size: 23px;
+                            }
+                        }
+                    }
+
+                    img{
+                        width: 688px;
+                        height: 642px;
+                    }
+                }
+            }
+        }
+
+        main{       
+            color: white;
+
+            .collections{
+                margin-top: 10%;
+                text-align: center;
+
+                h2{
+                    text-transform: uppercase;
+                    color: rgb(180, 41, 41);
+                    font-family: svampira;
+                    font-size: 50px;
+                }
+
+                p:nth-child(2){
+                    margin-top: 1.5%;
+                    font-family: fina;
+                    font-size: 20px;
+                }
+
+                main{
+
+                    margin-top: 7%;
+                    
+                    background-image: url(./img/frame_gran.png);
+                    background-repeat: no-repeat;
+                    background-size: 80% 100%;
+                    background-position: center;
+                    padding: 20px;
+                    padding-top: 40px;
+         
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        margin-right: 60px;
+
+                        li{
+                            margin-left: 4.3%;
+                        }
+
+                        li:first-child{
+                            filter: grayscale(1);
+                        }
+                    }
+                }
+            }
+
+            .cards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background-image: url(./img/frame_gran.png);
+                background-repeat: no-repeat;
+                background-size: 80% 100%;
+                background-position: center;
+                
+                padding-left: 185px;
+                padding-top: 50px;
+                .legendary{
+                    padding: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    width: 550px;
+
+                    >.n1{
+                        position: relative;
+
+                        img{
+                            height: 300px;
+                            width: 200px;
+                        }
+
+                        &::before{
+                            content: "";
+                            display: block;
+
+                            background-image: url(./img/frame-basis-gold.png);
+                            background-repeat: no-repeat;
+                            background-size: 65% auto;
+                            
+                            position: absolute;
+                            top: 0px;
+                            height: 400px;
+                            width: 320px;
+                        }
+
+                        i{
+                            background-image: url(./img/cost.png);
+                            background-size: cover;
+                            height: 100px;
+                            width: 40px;
+                            
+                            
+                            b{
+                                position: absolute;
+                                left:170px;
+                                top: 260px;
+                                font-family: svampira;
+                                
+                                color: orange;
+                                -webkit-text-stroke: 1px black;
+                                font-size: 37px;
+                                
+                            }
+
+                            &::before{
+                                content: "";
+                                display: block;
+                                background-image: url(./img/cost.png);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+
+                                position: absolute;
+                                left: 163px;
+                                height: 80px;
+                                width: 100%;
+                                top: 220px;
+                            }
+                        }
+
+                        &::after{
+                            content: "";
+                            display: block;
+                            background-image: url(./img/gem-legendary.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                            position: absolute;
+                            top: 0px;
+                            height: 30px;
+                            width: 100%;
+                        }
+                    }
+                    
+                    >main{
+                        font-family: fina;
+                        margin-left: 20px;
+                        width: 330px;
+                        header{
+                            h3{
+                                font-family: snormal;
+                                color: rgb(180, 41, 41);    
+                                font-size: 20px;
+                                margin-bottom: 20px;
+                            }
+    
+                            h2{
+                                font-size:20px;
+                            }
+    
+                            h4{
+                                font-size: 14px;
+    
+                                &::after{
+                                    content:"";
+                                    display: block;
+                                    width: 50%;
+                                    height: 0.07px;
+                                    background-color: white;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        >h2:nth-child(2){
+                            margin-top: 15px;
+                            line-height: 1.7;
+                        }
+
+                        >p{
+                            line-height: 1.5;
+                        }
+
+                        >q{
+                            font-style: italic;
+                            line-height: 1.5; 
+                            display: block;
+                            margin-bottom: 30px; 
+                        }
+
+                        .gold{
+                            display: flex;
+
+                            main{
+                                width: 300px;
+                                margin-left: 15px;
+
+                                h2{
+                                    margin-top: 15px;
+                                    font-family: snormal;
+                                }
+
+                                q{
+                                    font-family: fina;
+                                    font-style: italic;
+                                }
+                            }
+
+                            margin-bottom: 30px;
+
+                            figure{
+                                position: relative;
+                                img{
+                                    height: 250px;
+                                    width: 160px;
+                                    
+                                }
+
+                                &::before{
+                                    content: "";
+                                    display: block;
+        
+                                    background-image: url(./img/frame-basis-gold.png);
+                                    background-repeat: no-repeat;
+                                    background-size: 160px 250px;
+                                    
+                                    
+                                    position: absolute;
+                                    top: 0px;
+                                    height: 320px;
+                                    width: 241px;
+                                }
+                                
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    background-image: url(./img/gem-legendary.png);
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+
+                                    position: absolute;
+                                    top: 0px;
+                                    height: 25px;
+                                    width: 100%;
+                                }
+
+                                i{
+                                    b{
+                                        position: absolute;
+                                        left:128px;
+                                        top: 214px;
+                                        font-family: svampira;
+                                        
+                                        color: orange;
+                                        -webkit-text-stroke: 1px black;
+                                        font-size: 30px;
+                                        
+                                    }
+        
+                                    &::before{
+                                        content: "";
+                                        display: block;
+                                        background-image: url(./img/cost.png);
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+        
+                                        position: absolute;
+                                        left: 125px;
+                                        height: 60px;
+                                        width: 80%;
+                                        top: 185px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .epic{ 
+                    padding-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    width: 550px;
+
+                    .n5{
+                        position: relative;
+
+                        img{
+                            height: 300px;
+                            width: 200px;
+                        }
+
+                        &::before{
+                            content: "";
+                            display: block;
+
+                            background-image: url(./img/frame-basis-gold.png);
+                            background-repeat: no-repeat;
+                            background-size: 65% auto;
+                            
+                            position: absolute;
+                            top: 0px;
+                            height: 400px;
+                            width: 320px;
+                        }
+
+                        i{
+                            
+                            b{
+                                position: absolute;
+                                left:175px;
+                                top: 260px;
+                                font-family: svampira;
+                                
+                                color: orange;
+                                -webkit-text-stroke: 1px black;
+                                font-size: 37px;
+                                
+                            }
+
+                            &::before{
+                                content: "";
+                                display: block;
+                                background-image: url(./img/cost.png);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+
+                                position: absolute;
+                                left: 163px;
+                                height: 80px;
+                                width: 100%;
+                                top: 220px;
+                            }
+                        }
+
+                        &::after{
+                            content: "";
+                            display: block;
+                            background-image: url(./img/gem-epic.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                            position: absolute;
+                            top: 0px;
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        
+                    }
+
+                    >main{
+                        font-family: fina;
+                        margin-left: 20px;
+                        width: 330px;
+                        header{
+                            h3{
+                                font-family: snormal;
+                                color: rgb(180, 41, 41);    
+                                font-size: 20px;
+                                margin-bottom: 20px;
+                            }
+    
+                            h2{
+                                font-size:20px;
+                            }
+    
+                            h4{
+                                font-size: 14px;
+    
+                                &::after{
+                                    content:"";
+                                    display: block;
+                                    width: 50%;
+                                    height: 0.07px;
+                                    background-color: white;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        >h2:nth-child(2){
+                            margin-top: 15px;
+                            line-height: 1.7;
+                        }
+
+                        >p{
+                            line-height: 1.5;
+                        }
+
+                        >q{
+                            font-style: italic;
+                            line-height: 1.5; 
+                            display: block;
+                            margin-bottom: 30px; 
+                        }
+                    }
+                }
+
+                .rare{
+                    display: flex;
+                    padding-bottom: 60px;
+                    padding-left: 30px;
+                    .artifact{
+                        position: relative;
+
+                        img{
+                            height: 300px;
+                            width: 200px;
+                        }
+
+                        &::before{
+                            content: "";
+                            display: block;
+
+                            background-image: url(./img/frame-basis-gold.png);
+                            background-repeat: no-repeat;
+                            background-size: 65% auto;
+                            
+                            position: absolute;
+                            top: 0px;
+                            height: 400px;
+                            width: 320px;
+                        }
+
+                        i{
+                            
+                            b{
+                                position: absolute;
+                                left:175px;
+                                top: 260px;
+                                font-family: svampira;
+                                
+                                color: orange;
+                                -webkit-text-stroke: 1px black;
+                                font-size: 37px;
+                                
+                            }
+
+                            &::before{
+                                content: "";
+                                display: block;
+                                background-image: url(./img/cost.png);
+                                background-repeat: no-repeat;
+                                background-size: contain;
+
+                                position: absolute;
+                                left: 163px;
+                                height: 80px;
+                                width: 100%;
+                                top: 220px;
+                            }
+                        }
+
+                        &::after{
+                            content: "";
+                            display: block;
+                            background-image: url(./img/gem-rare.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                            position: absolute;
+                            top: 0px;
+                            height: 30px;
+                            width: 100%;
+                        }
+                    }
+
+                    >main{
+                        font-family: fina;
+                        margin-left: 20px;
+                        width: 330px;
+                        header{
+                            h3{
+                                font-family: snormal;
+                                color: rgb(180, 41, 41);    
+                                font-size: 20px;
+                                margin-bottom: 20px;
+                            }
+    
+                            h2{
+                                font-size:20px;
+                            }
+    
+                            h4{
+                                font-size: 14px;
+    
+                                &::after{
+                                    content:"";
+                                    display: block;
+                                    width: 50%;
+                                    height: 0.07px;
+                                    background-color: white;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        >h2:nth-child(2){
+                            margin-top: 15px;
+                            line-height: 1.7;
+                        }
+
+                        >p{
+                            line-height: 1.5;
+                        }
+
+                        >q{
+                            font-style: italic;
+                            line-height: 1.5; 
+                            display: block;
+                            margin-bottom: 30px; 
+                        }
+                    }
+                }
+
+                .common{
+                    display: flex;
+                    padding-bottom: 60px;
+                    padding-left: 30px;
+                    .n4{
+                        position: relative;
+
+                        img{
+                            height: 300px;
+                            width: 200px;
+                        }
+
+                        b{
+                            position: absolute;
+
+                            
+
+                            height: 200px;
+                            left:175px;
+                            top: 260px;
+                            font-family: svampira;
+                            
+                            color: orange;
+                            -webkit-text-stroke: 1px black;
+                            font-size: 37px;         
+                        }
+
+                        &::after{
+                            content: "";
+                            display: block;
+
+                            background-image: url(./img/frame-basis-gold.png);
+                            background-repeat: no-repeat;
+                            background-size: 65% auto;
+                            
+                            position: absolute;
+                            top: 0px;
+                            height: 400px;
+                            width: 320px;
+                        }
+
+                        &::before{
+                            content: "";
+                            display: block;
+                            background-image: url(./img/cost.png);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+
+                            position: absolute;
+                            left: 163px;
+                            height: 80px;
+                            width: 100%;
+                            top: 220px;
+                        }
+                    }
+
+                    >main{
+                        font-family: fina;
+                        margin-left: 20px;
+                        width: 330px;
+                        header{
+                            h3{
+                                font-family: snormal;
+                                color: rgb(180, 41, 41);    
+                                font-size: 20px;
+                                margin-bottom: 20px;
+                            }
+    
+                            h2{
+                                font-size:20px;
+                            }
+    
+                            h4{
+                                font-size: 14px;
+    
+                                &::after{
+                                    content:"";
+                                    display: block;
+                                    width: 50%;
+                                    height: 0.07px;
+                                    background-color: white;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        >h2:nth-child(2){
+                            margin-top: 15px;
+                            line-height: 1.7;
+                        }
+
+                        >p{
+                            line-height: 1.5;
+                        }
+
+                        >q{
+                            font-style: italic;
+                            line-height: 1.5; 
+                            display: block;
+                            margin-bottom: 30px; 
+                        }
+                    }
+
+                    &::after{
+                        content: "";
+                        display: block;
+                        background-image: url(./img/gem-rare.png);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+
+                        position: absolute;
+                        
+                        height: 30px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            color: white;
+            >img{
+                width: 270px;
+                height: 100%;
+            }
+
+            >p{ 
+                text-align: center;
+                background-image: url(./img/silver-button.png);
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                text-transform: uppercase;
+                font-family: snormal;
+                font-size: 25px;
+                color: black;
+                text-shadow: red 0px 1px 4px;
+
+                text-align: center;
+                padding-left: 100px;
+                padding-right: 100px;
+                padding-top: 35px;
+                padding-bottom  : 35px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: row ;
+                align-items: center;
+
+                p{
+                    font-family: fina;
+                    font-size: 30px;
+                    width: 150px;
+                }
+
+                ul{
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: row;
+
+                   li{
+                    padding: 20px;
+                   }
+
+                    li:first-child{
+                        img{
+                            width: 200px;
+                        }
+                    }
+
+                    li:nth-child(2){
+                        img{
+                            width: 300px;
+                        }
+                    }
+
+                    li:nth-child(3){
+                        img{
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

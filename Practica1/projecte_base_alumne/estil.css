@@ -1,0 +1,687 @@
+@font-face {
+  font-family: 'svampira';
+  src: url(fonts/hinted-GWENT-ExtraBold.woff);
+}
+@font-face {
+  font-family: 'svampira2';
+  src: url(fonts/hinted-GWENT-ExtraBold.woff2);
+}
+@font-face {
+  font-family: 'snormal';
+  src: url(fonts/hinted-HalisGR-Bold.woff2);
+}
+@font-face {
+  font-family: 'fina';
+  src: url(fonts/hinted-HalisGR-Book.woff2);
+}
+@font-face {
+  font-family: 'finax2';
+  src: url(fonts/hinted-HalisGR-Light.woff2);
+}
+html {
+  background-color: black;
+  height: 100%;
+}
+html body > header {
+  background-image: url(img/large_back.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html body > header ul {
+  background-image: url(img/menu_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body > header ul li {
+  text-transform: uppercase;
+  font-family: snormal;
+  font-size: 30px;
+  color: black;
+  text-shadow: red 0px 1px 4px;
+}
+html body > header ul li:first-child {
+  position: relative;
+  background-image: url(img/blacksun_logo.png);
+  background-size: cover;
+  background-position: left center;
+  height: 100px;
+  width: 100px;
+  margin-right: 1%;
+}
+html body > header ul li:not(:first-child) {
+  margin-right: 4%;
+}
+html body > header ul li:last-child {
+  margin-left: 5%;
+}
+html body > header section:first-of-type {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70%;
+}
+html body > header section:first-of-type h1 {
+  background-image: url(img/silver-button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: snormal;
+  font-size: 25px;
+  color: black;
+  text-shadow: red 0px 1px 4px;
+  height: 100px;
+}
+html body > header section:first-of-type p {
+  text-align: center;
+  font-size: 22px;
+  font-family: fina;
+}
+html body > header .offers {
+  color: white;
+}
+html body > header .offers article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 150px;
+}
+html body > header .offers article div {
+  margin-left: 30px;
+}
+html body > header .offers article div h2 {
+  text-transform: uppercase;
+  color: #b42929;
+  font-family: svampira;
+  font-size: 45px;
+  text-align: center;
+}
+html body > header .offers article div h2::after {
+  content: "";
+  background-image: url(img/separator.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center ;
+  display: block;
+  height: 100px;
+}
+html body > header .offers article div main p {
+  width: 400px;
+  font-size: 20px;
+  font-family: fina;
+  text-align: justify;
+}
+html body > header .offers article img {
+  width: 600px;
+  height: 338px;
+}
+html body > header .offers article:last-child {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+html body > header .offers article:last-child div {
+  width: 400px;
+  margin-right: 25px;
+}
+html body > header .offers article:last-child div main p {
+  font-size: 23px;
+}
+html body > header .offers article:last-child img {
+  width: 688px;
+  height: 642px;
+}
+html body main {
+  color: white;
+}
+html body main .collections {
+  margin-top: 10%;
+  text-align: center;
+}
+html body main .collections h2 {
+  text-transform: uppercase;
+  color: #b42929;
+  font-family: svampira;
+  font-size: 50px;
+}
+html body main .collections p:nth-child(2) {
+  margin-top: 1.5%;
+  font-family: fina;
+  font-size: 20px;
+}
+html body main .collections main {
+  margin-top: 7%;
+  background-image: url(img/frame_gran.png);
+  background-repeat: no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+html body main .collections main ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 60px;
+}
+html body main .collections main ul li {
+  margin-left: 4.3%;
+}
+html body main .collections main ul li:first-child {
+  filter: grayscale(1);
+}
+html body main .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(img/frame_gran.png);
+  background-repeat: no-repeat;
+  background-size: 80% 100%;
+  background-position: center;
+  padding-left: 185px;
+  padding-top: 50px;
+}
+html body main .cards .legendary {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+}
+html body main .cards .legendary > .n1 {
+  position: relative;
+}
+html body main .cards .legendary > .n1 img {
+  height: 300px;
+  width: 200px;
+}
+html body main .cards .legendary > .n1::before {
+  content: "";
+  display: block;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  position: absolute;
+  top: 0px;
+  height: 400px;
+  width: 320px;
+}
+html body main .cards .legendary > .n1 i {
+  background-image: url(img/cost.png);
+  background-size: cover;
+  height: 100px;
+  width: 40px;
+}
+html body main .cards .legendary > .n1 i b {
+  position: absolute;
+  left: 170px;
+  top: 260px;
+  font-family: svampira;
+  color: orange;
+  -webkit-text-stroke: 1px black;
+  font-size: 37px;
+}
+html body main .cards .legendary > .n1 i::before {
+  content: "";
+  display: block;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 163px;
+  height: 80px;
+  width: 100%;
+  top: 220px;
+}
+html body main .cards .legendary > .n1::after {
+  content: "";
+  display: block;
+  background-image: url(img/gem-legendary.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+}
+html body main .cards .legendary > main {
+  font-family: fina;
+  margin-left: 20px;
+  width: 330px;
+}
+html body main .cards .legendary > main header h3 {
+  font-family: snormal;
+  color: #b42929;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+html body main .cards .legendary > main header h2 {
+  font-size: 20px;
+}
+html body main .cards .legendary > main header h4 {
+  font-size: 14px;
+}
+html body main .cards .legendary > main header h4::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.07px;
+  background-color: white;
+  margin-top: 15px;
+}
+html body main .cards .legendary > main > h2:nth-child(2) {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+html body main .cards .legendary > main > p {
+  line-height: 1.5;
+}
+html body main .cards .legendary > main > q {
+  font-style: italic;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 30px;
+}
+html body main .cards .legendary > main .gold {
+  display: flex;
+  margin-bottom: 30px;
+}
+html body main .cards .legendary > main .gold main {
+  width: 300px;
+  margin-left: 15px;
+}
+html body main .cards .legendary > main .gold main h2 {
+  margin-top: 15px;
+  font-family: snormal;
+}
+html body main .cards .legendary > main .gold main q {
+  font-family: fina;
+  font-style: italic;
+}
+html body main .cards .legendary > main .gold figure {
+  position: relative;
+}
+html body main .cards .legendary > main .gold figure img {
+  height: 250px;
+  width: 160px;
+}
+html body main .cards .legendary > main .gold figure::before {
+  content: "";
+  display: block;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: 160px 250px;
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 241px;
+}
+html body main .cards .legendary > main .gold figure::after {
+  content: "";
+  display: block;
+  background-image: url(img/gem-legendary.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 25px;
+  width: 100%;
+}
+html body main .cards .legendary > main .gold figure i b {
+  position: absolute;
+  left: 128px;
+  top: 214px;
+  font-family: svampira;
+  color: orange;
+  -webkit-text-stroke: 1px black;
+  font-size: 30px;
+}
+html body main .cards .legendary > main .gold figure i::before {
+  content: "";
+  display: block;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 125px;
+  height: 60px;
+  width: 80%;
+  top: 185px;
+}
+html body main .cards .epic {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+}
+html body main .cards .epic .n5 {
+  position: relative;
+}
+html body main .cards .epic .n5 img {
+  height: 300px;
+  width: 200px;
+}
+html body main .cards .epic .n5::before {
+  content: "";
+  display: block;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  position: absolute;
+  top: 0px;
+  height: 400px;
+  width: 320px;
+}
+html body main .cards .epic .n5 i b {
+  position: absolute;
+  left: 175px;
+  top: 260px;
+  font-family: svampira;
+  color: orange;
+  -webkit-text-stroke: 1px black;
+  font-size: 37px;
+}
+html body main .cards .epic .n5 i::before {
+  content: "";
+  display: block;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 163px;
+  height: 80px;
+  width: 100%;
+  top: 220px;
+}
+html body main .cards .epic .n5::after {
+  content: "";
+  display: block;
+  background-image: url(img/gem-epic.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+}
+html body main .cards .epic > main {
+  font-family: fina;
+  margin-left: 20px;
+  width: 330px;
+}
+html body main .cards .epic > main header h3 {
+  font-family: snormal;
+  color: #b42929;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+html body main .cards .epic > main header h2 {
+  font-size: 20px;
+}
+html body main .cards .epic > main header h4 {
+  font-size: 14px;
+}
+html body main .cards .epic > main header h4::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.07px;
+  background-color: white;
+  margin-top: 15px;
+}
+html body main .cards .epic > main > h2:nth-child(2) {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+html body main .cards .epic > main > p {
+  line-height: 1.5;
+}
+html body main .cards .epic > main > q {
+  font-style: italic;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 30px;
+}
+html body main .cards .rare {
+  display: flex;
+  padding-bottom: 60px;
+  padding-left: 30px;
+}
+html body main .cards .rare .artifact {
+  position: relative;
+}
+html body main .cards .rare .artifact img {
+  height: 300px;
+  width: 200px;
+}
+html body main .cards .rare .artifact::before {
+  content: "";
+  display: block;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  position: absolute;
+  top: 0px;
+  height: 400px;
+  width: 320px;
+}
+html body main .cards .rare .artifact i b {
+  position: absolute;
+  left: 175px;
+  top: 260px;
+  font-family: svampira;
+  color: orange;
+  -webkit-text-stroke: 1px black;
+  font-size: 37px;
+}
+html body main .cards .rare .artifact i::before {
+  content: "";
+  display: block;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 163px;
+  height: 80px;
+  width: 100%;
+  top: 220px;
+}
+html body main .cards .rare .artifact::after {
+  content: "";
+  display: block;
+  background-image: url(img/gem-rare.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+}
+html body main .cards .rare > main {
+  font-family: fina;
+  margin-left: 20px;
+  width: 330px;
+}
+html body main .cards .rare > main header h3 {
+  font-family: snormal;
+  color: #b42929;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+html body main .cards .rare > main header h2 {
+  font-size: 20px;
+}
+html body main .cards .rare > main header h4 {
+  font-size: 14px;
+}
+html body main .cards .rare > main header h4::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.07px;
+  background-color: white;
+  margin-top: 15px;
+}
+html body main .cards .rare > main > h2:nth-child(2) {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+html body main .cards .rare > main > p {
+  line-height: 1.5;
+}
+html body main .cards .rare > main > q {
+  font-style: italic;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 30px;
+}
+html body main .cards .common {
+  display: flex;
+  padding-bottom: 60px;
+  padding-left: 30px;
+}
+html body main .cards .common .n4 {
+  position: relative;
+}
+html body main .cards .common .n4 img {
+  height: 300px;
+  width: 200px;
+}
+html body main .cards .common .n4 b {
+  position: absolute;
+  height: 200px;
+  left: 175px;
+  top: 260px;
+  font-family: svampira;
+  color: orange;
+  -webkit-text-stroke: 1px black;
+  font-size: 37px;
+}
+html body main .cards .common .n4::after {
+  content: "";
+  display: block;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: 65% auto;
+  position: absolute;
+  top: 0px;
+  height: 400px;
+  width: 320px;
+}
+html body main .cards .common .n4::before {
+  content: "";
+  display: block;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 163px;
+  height: 80px;
+  width: 100%;
+  top: 220px;
+}
+html body main .cards .common > main {
+  font-family: fina;
+  margin-left: 20px;
+  width: 330px;
+}
+html body main .cards .common > main header h3 {
+  font-family: snormal;
+  color: #b42929;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+html body main .cards .common > main header h2 {
+  font-size: 20px;
+}
+html body main .cards .common > main header h4 {
+  font-size: 14px;
+}
+html body main .cards .common > main header h4::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 0.07px;
+  background-color: white;
+  margin-top: 15px;
+}
+html body main .cards .common > main > h2:nth-child(2) {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+html body main .cards .common > main > p {
+  line-height: 1.5;
+}
+html body main .cards .common > main > q {
+  font-style: italic;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 30px;
+}
+html body main .cards .common::after {
+  content: "";
+  display: block;
+  background-image: url(img/gem-rare.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 40px;
+}
+html body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+html body footer > img {
+  width: 270px;
+  height: 100%;
+}
+html body footer > p {
+  background-image: url(img/silver-button.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-transform: uppercase;
+  font-family: snormal;
+  font-size: 25px;
+  color: black;
+  text-shadow: red 0px 1px 4px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+html body footer div {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+}
+html body footer div p {
+  font-family: fina;
+  font-size: 30px;
+  width: 150px;
+}
+html body footer div ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+html body footer div ul li {
+  padding: 20px;
+}
+html body footer div ul li:first-child img {
+  width: 200px;
+}
+html body footer div ul li:nth-child(2) img {
+  width: 300px;
+}
+html body footer div ul li:nth-child(3) img {
+  width: 350px;
+}
