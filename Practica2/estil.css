@@ -3,9 +3,9 @@
   src: url(avengersfont.ttf);
 }
 html {
-  height: 100vh;
+  height: 100%;
   background-image: url(avengers_bg.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 html body {
@@ -19,15 +19,16 @@ html body h1 {
   -webkit-text-stroke: 0.5px black;
 }
 html body main {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  margin-left: 200px;
 }
 html body main section {
   display: grid;
-  grid-template-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 25% 25% 25%;
   grid-column: 2/3;
+  grid-gap: 50px;
 }
 html body main section picture {
+  overflow: hidden;
   width: 100%;
   border-radius: 20px;
   background-color: black;
