@@ -34,3 +34,21 @@ html body main section picture {
   background-color: black;
   box-shadow: 0.5px 0.5px 0.5px 2.3px #ffa600, 4px 4px 4px 8px #8400ff;
 }
+@media (min-width: 1601px) {
+  .lletres {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    font-family: av;
+    color: #0000d8;
+    text-shadow: yellow 4px 0px 4px;
+  }
+  .lletres p:nth-child(2) {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+  .lletres p:nth-child(1) {
+    font-size: 100px;
+  }
+}
