@@ -85,3 +85,16 @@ html main #part2 #recomendacions img {
   height: 300px;
   width: 400px;
 }
+html main #part2 #ourclients h1 {
+  font-family: 'Lato', sans-serif;
+}
+html main #part2 #ourclients h1 hr {
+  width: 60px;
+}
+html main #part2 #ourclients h1 .grossor {
+  border: 2px solid black;
+}
+html main #part2 #ourclients img {
+  height: 200px;
+  overflow: hidden;
+}
