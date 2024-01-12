@@ -6,24 +6,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="reset.css" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="estil.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">		<link rel="stylesheet" type="text/css" href="estil.css" />
 	</head>
 
     <body class="container-fluid p-0">
-        <header class="container-fluid bg-dark text-white pt-3 p-1">
-            <ul class="d-flex align-items-center col">
+        <header class="container-fluid text-white ">
+            <ul class="d-flex align-items-center col py-2">
                 <h4 class="me-1">⚙️</h4> 
                 <h4 class="me-5">Travel Services</h4> 
                 <li class="me-5">Home</li>
                 <li class="nav-item dropdown me-5">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Our Services</a>
+                  <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Our Services</a>
                 </li>
-                <li class="me-5">Flights</li>
-                <li class="me-5">Hotels</li>
-                <li class="me-5">Contact</li>
+                <li class="me-5 text-light">Flights</li>
+                <li class="me-5 text-light">Hotels</li>
+                <li class="me-5 text-light">Contact</li>
 
-                <div class="d-flex offset-4">
+                <div class="d-flex offset-2">
                     <span class="input-group-text" id="basic-addon1">🔎</span>
                     <input type="text" class="form-control" placeholder="Write your search here" aria-label="missatge" aria-describedby="basic-addon1">
                     <button type="button" class="btn btn-outline-success ms-3">Search</button>
@@ -32,7 +31,6 @@
         </header>
 
         <main class="container-fluid p-0">
-          <!-- Aqui comença el carrousel -->
             <div id="carrousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,20 +68,13 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
-          <!-- Aqui acaba el carrousel -->
-
-          
+            </div>  
             <div id="part2" class="container-fluid mt-3 p-0">
-              <!-- Part de our service -->
                 <div id="ourservice" class="text-center">
                   <h1>Our service <hr class="mx-auto grossor mb-4"></h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                 </div>
-              <!-- Fi de la part de our service -->
-
-              <!-- Part de les barres de progrés -->
               <div id="barres" class="container my-5 px-5">
                 <div class="row justify-content-center">
                   <div class="col-2 d-flex justify-content-end">
@@ -140,10 +131,8 @@
                   </div>
                 </div>
               </div>
-              <!-- fi de les barres de progrés  -->
 
-              <!-- Part dels emoticonos -->
-              <div id="emotes" class="container-fluid mt-5 px-5">
+              <div id="emotes" class="container-fluid mt-5 px-5 bg-light">
                 <div class="row mt-5">
                   <div class="col">
                     <img src="./imatges/emoticonos/avion.png" class="d-block w-foto mx-auto">
@@ -167,26 +156,22 @@
                   </div>
                 </div>
                 <div class="row mt-3">
-                  <div class="col">
+                  <div class="col d-flex justify-content-center">
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Proin non odio sed eros tristeque</p>
                   </div>
-                  <div class="col">
+                  <div class="col d-flex justify-content-center">
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Proin non odio sed eros tristeque</p>
                   </div>
-                  <div class="col">
+                  <div class="col d-flex justify-content-center">
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Proin non odio sed eros tristeque</p>
                   </div>
                 </div>
               </div>
-              <!-- fi de la part dels emoticonos -->
 
-              <!-- Part de recomendacions -->
               <div id="recomendacions" class="container my-5">
                 <h1 class="text-center">Our Recomendations <hr class="mx-auto grossor mb-4"></h1>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
                 <p class="text-center">Morbi libero elit elementum quis faucibus ac, condimentum quis nibh.<button type="button" class="btn btn-primary btn-lg ms-2">View all Works?</button></p>
-                
-                <!-- part de les fotos -->
                  <div class="container mt-5">
                   <div class="row">
                     <div class="col-4 p-0 m-0">
@@ -211,14 +196,82 @@
                     </div>
                   </div>
                 </div>
-                <!-- fi part de les fotos -->
               </div>
-              <!-- Fi de la part de recomendacions -->
               <div id="ourclients" class="container-fluid p-0 ">
                 <h1 class="text-center mt-5">What Our Clients Say<hr class="mx-auto grossor mb-4"></h1>
-                <img src="./imatges/bengala/descarga.jpg" class="w-100">
+                <div id="focs" class="container-fluid d-flex flex-column align-items-center pt-4">
+                  <h1 class="w-50 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1> 
+                  <div class="d-flex mt-3">
+                    <h2 class="text-warning">Johnny DOE</h2><h2 class="ms-2 text-light">,CEO,Company.</h2>
+                  </div>  
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-warning" for="btnradio1"></label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="btnradio2"></label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-warning" for="btnradio3"></label>
+                  </div>
+                  <div class="container-fluid">
+                    <h2 class="text-white d-flex justify-content-end">©️ Jayson Delos Santos</h2>
+                  </div>
+                </div>
+              </div>
+              <div id="facts" class="container-fluid pt-5">
+                <div class="col">
+                  <div class="row">
+                    <h1>Ter Stegen Facts</h1>
+                  </div>
+                  <div class="row">
+                    <div class="col d-flex align-items-center w-25">
+                      <h2>😄</h2>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <h2 class="text-warning">1200+ Happy Clients</h2>
+                      </div>
+                      <div class="row">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row mt-3">
+                  <div class="col d-flex align-items-center">
+                    <h2>🗹</h2>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <h2 class="text-warning">600+ Tours Offered</h2>
+                    </div>
+                    <div class="row">
+                      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col d-flex align-items-center">
+                    <h2>🏆</h2>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <h2 class="text-warning">25 Awars Won</h2>
+                    </div>
+                    <div class="row">
+                      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <h2>Questions & Answers</h2>
+                </div>
               </div>
             </div>
         </main>
     </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>

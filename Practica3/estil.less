@@ -4,6 +4,8 @@
 html{
     header{
         font-family: 'Lato', sans-serif;
+        background-color: rgb(73, 72, 72);
+        overflow: hidden;
     }
     
     main{
@@ -11,7 +13,7 @@ html{
         #carrousel{
             font-family: 'Lato', sans-serif;
             .shadow-lg{
-                text-shadow: 5px 4px 3px rgba(0, 0, 0, 0.7);
+                text-shadow: 5px 4px 3px rgba(39, 36, 36, 0.7);
             }
 
             h1{
@@ -95,8 +97,11 @@ html{
                 }
 
                 img{
-                    height: 300px;
-                    width: 400px;
+                    height: 100%;
+
+                    &:hover{
+                        background-color: orange;
+                    }
                 }
             }
 
@@ -116,6 +121,36 @@ html{
 
                 img{
                     height: 250px;
+                }
+
+                #focs{
+                    background-image: url(./imatges/bengala/descarga.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+
+                    h1{
+                        color: white;
+                        font-size: 18px;
+                        font-family: 'Lato', sans-serif;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    h2{
+                        font-size: 18px;
+                        font-family: 'Lato', sans-serif;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                }
+            }
+
+            #facts{
+                h1{
+                    font-size: 25px;
+                }
+
+                h2{
+                    font-size: 18px;
                 }
             }
         }
