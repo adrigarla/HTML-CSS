@@ -4,7 +4,6 @@
 html{
     header{
         font-family: 'Lato', sans-serif;
-        background-color: rgb(73, 72, 72);
         overflow: hidden;
     }
     
@@ -98,10 +97,10 @@ html{
 
                 img{
                     height: 100%;
+                }
 
-                    &:hover{
-                        background-color: orange;
-                    }
+                img:hover::after{
+                    background-color: aqua;
                 }
             }
 
@@ -157,6 +156,31 @@ html{
                     width: 600px;
                 }
             }
+
+            #fun{
+                h1{
+                    font-size: 30px;
+                    font-family: 'Lato', sans-serif;
+                }
+                h2{
+                    font-size: 18px;
+                    font-family: 'Lato', sans-serif;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 150px;
+        
+        h1{
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        svg{
+            width: 30px;
         }
     }
 }

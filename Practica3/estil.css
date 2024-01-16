@@ -21,7 +21,6 @@
 }
 html header {
   font-family: 'Lato', sans-serif;
-  background-color: #494848;
   overflow: hidden;
 }
 html main #carrousel {
@@ -86,8 +85,8 @@ html main #part2 #recomendacions p {
 html main #part2 #recomendacions img {
   height: 100%;
 }
-html main #part2 #recomendacions img:hover {
-  background-color: orange;
+html main #part2 #recomendacions img:hover::after {
+  background-color: aqua;
 }
 html main #part2 #ourclients h1 {
   font-family: 'Lato', sans-serif;
@@ -126,4 +125,24 @@ html main #part2 #facts h2 {
 }
 html main #part2 #facts #acc {
   width: 600px;
+}
+html main #part2 #fun h1 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+html main #part2 #fun h2 {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+html footer {
+  height: 150px;
+}
+html footer h1 {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+html footer svg {
+  width: 30px;
 }
