@@ -10,25 +10,47 @@
 	</head>
 
     <body class="container-fluid p-0">
-        <header class="container-fluid text-white bg-dark bg-gradientr">
-            <ul class="d-flex justify-content-center align-items-center col py-2">
-                <h4 class="me-1">⚙️</h4> 
-                <h4 class="me-5">Travel Services</h4> 
-                <li class="me-5">Home</li>
-                <li class="nav-item dropdown me-5">
-                  <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Our Services</a>
-                </li>
-                <li class="me-5 text-light">Flights</li>
-                <li class="me-5 text-light">Hotels</li>
-                <li class="me-5 text-light">Contact</li>
-
-                <div class="d-flex offset-2">
-                    <span class="input-group-text" id="basic-addon1">🔎</span>
-                    <input type="text" class="form-control" placeholder="Write your search here" aria-label="missatge" aria-describedby="basic-addon1">
-                    <button type="button" class="btn btn-outline-success ms-3">Search</button>
+      <header class="container-fluid text-white bg-dark bg-gradient d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <h4 class="nav-link me-1">⚙️</h4>
+                        </li>
+                        <li class="nav-item me-5">
+                            <h4 class="nav-link text-light">Travel Services</h4>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link text-light" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Flights</a></li>
+                                <li><a class="dropdown-item" href="#">Hotels</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-5">
+                          <a class="nav-link text-light" href="#">Flights</a>
+                      </li>
+                      <li class="nav-item me-5">
+                        <a class="nav-link text-light" href="#">Hotels</a>
+                      </li>
+                      <li class="nav-item me-5">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
-            </ul>
-        </header>
+            </div>
+        </nav>
+    </header>
+    
 
         <main class="container-fluid p-0">
             <div id="carrousel" class="carousel slide" data-bs-ride="carousel">
