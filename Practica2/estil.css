@@ -8,47 +8,53 @@ html {
   background-repeat: repeat;
   background-size: cover;
 }
-html body {
+html body header {
   text-align: center;
 }
-html body h1 {
+html body header h1 {
   font-family: av;
   color: #0000d8;
   font-size: 100px;
   text-shadow: yellow 4px 0px 4px;
   -webkit-text-stroke: 0.5px black;
 }
-html body main {
-  margin-left: 220px;
-}
-html body main section {
+html body main .personatges {
   display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-column: 2/3;
-  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 100px;
 }
-html body main section picture {
+html body main .personatges picture {
   overflow: hidden;
   width: 100%;
   border-radius: 20px;
   background-color: black;
   box-shadow: 0.5px 0.5px 0.5px 2.3px #ffa600, 4px 4px 4px 8px #8400ff;
+  display: grid;
+  place-items: center;
+  position: relative;
 }
-@media (min-width: 1601px) {
-  p {
-    font-family: av;
-    color: #0000d8;
-    text-shadow: yellow 4px 0px 4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: centerx;
-    font-size: 70px;
-  }
-  p p:nth-child(2) {
-    margin-left: 40px;
-  }
-  p p:nth-child(1) {
-    font-size: 150px;
-    align-items: center;
+html body main .personatges picture .lletres {
+  position: absolute;
+  bottom: 60;
+  white-space: nowrap;
+}
+html body main .personatges picture .lletres p {
+  font-family: av;
+  color: #0000d8;
+  text-shadow: yellow 4px 0px 4px;
+  -webkit-text-stroke: 0.5px black;
+  display: inline;
+  margin-right: 40px;
+}
+html body main .personatges picture .lletres p:first-child {
+  font-size: 90px;
+}
+html body main .personatges picture .lletres p:last-child {
+  font-size: 40px;
+}
+@media (max-width: 1100px) {
+  html body main .personatges {
+    grid-template-columns: 1fr 1fr;
   }
 }
