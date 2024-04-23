@@ -53,8 +53,45 @@ html body main .personatges picture .lletres p:first-child {
 html body main .personatges picture .lletres p:last-child {
   font-size: 40px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1150px) and (min-width: 900px) {
   html body main .personatges {
     grid-template-columns: 1fr 1fr;
+  }
+  html body main .personatges picture {
+    text-align: center;
+    grid-template-columns: 4fr 2fr;
+  }
+  html body main .personatges picture img {
+    grid-column: 2/2;
+    width: 120px;
+    height: auto;
+    place-items: center;
+  }
+  html body main .personatges picture .lletres {
+    white-space: normal;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    left: 140px;
+    bottom: 20;
+  }
+  html body main .personatges picture .lletres p {
+    text-shadow: -3.5px -3.5px 0 orange, 3.5px -3.5px 0 orange, -3.5px 3.5px 0 orange, 3.5px 3.5px 0 orange;
+  }
+  html body main .personatges picture .lletres p:first-child {
+    font-size: 30px;
+  }
+  html body main .personatges picture .lletres p:last-child {
+    font-size: 40px;
+  }
+}
+@media (max-width: 900px) {
+  html body main .personatges {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+  html body main .personatges picture img {
+    height: 100px;
+    width: auto;
   }
 }
