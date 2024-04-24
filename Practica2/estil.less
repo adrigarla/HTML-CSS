@@ -70,7 +70,7 @@ html{
     }
 }
 
-@media (max-width: 1150px) and (min-width: 900px){
+@media (max-width: 1150px) and (min-width: 730px){
    html{
     body{
         main{
@@ -84,8 +84,11 @@ html{
                     img{
                         grid-column: 2/2;
                         width: 120px;
-                        height: auto;
-                        place-items: center;
+                        height: 100%;
+                        justify-self:center;
+                        align-self: center;
+                        display: block;
+                        object-fit: contain;
                     }
 
                     .lletres{
@@ -118,19 +121,40 @@ html{
    }
 }
 
-@media (max-width: 900px){
+@media (max-width: 730px){
     html{
      body{
          main{
              .personatges{
                  grid-template-columns: 1fr;
-                
-                 overflow: scroll;
-                 
                  picture{
+                    height: 200px;  
+                    
+                    position: relative;
                     img{
-                        height: 100px;
+                        height: 500px;
                         width: auto;
+                    }
+
+                    .lletres{
+                        position: absolute;
+                        z-index: 1;
+                        p{
+                            text-shadow: 
+                            -3.5px -3.5px 0 orange,
+                            3.5px -3.5px 0 orange,
+                            -3.5px 3.5px 0 orange,
+                            3.5px 3.5px 0 orange;
+                        }
+                        
+                        p:first-child{
+                            font-size: 50px;
+                       }
+                       
+                        p:last-child{
+                            font-size: 40px;
+                            margin-left: 140px;
+                        }
                     }
                  }
              }
