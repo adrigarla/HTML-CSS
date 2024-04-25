@@ -177,3 +177,18 @@ html footer svg {
     font-size: 15px;
   }
 }
+@media only screen and (max-width: 576px) {
+  html main #part2 #ourservice p {
+    font-size: 17px;
+  }
+  html main #part2 #barres p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  html main #part2 #barres .altura {
+    height: 25px;
+  }
+  html main #part2 #facts #acc {
+    width: 100%;
+  }
+}
