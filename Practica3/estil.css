@@ -21,7 +21,10 @@
 }
 html header {
   font-family: 'Lato', sans-serif;
-  overflow: hidden;
+}
+html header .titol {
+  font-size: 25px;
+  line-height: 50px;
 }
 html main #carrousel {
   font-family: 'Lato', sans-serif;
