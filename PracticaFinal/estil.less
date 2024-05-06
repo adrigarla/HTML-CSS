@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Regular';
+    src: url(./Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff),
+         url(./Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url(./Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff),
+         url(./Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2);
+}
+html{
+    height: 100vh;
+
+    body{
+        background-image: url("./assets/back1.jpg");
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 20px;
+
+        color: white;
+
+        .p3,.p2,.p3{font-family: 'Regular', sans-serif;}
+
+        h1,h2{font-family: 'Bold', sans-serif;}
+
+        .p3{font-size: 12px;} .p2{font-size: 14px;} .p1{font-size: 16px;}
+
+        h1{font-size: 80px;} h2{font-size: 56px;}
+
+        header{
+            background-color: transparent;
+
+            .opacitatBuscador{
+                background-color: rgba(255, 255, 255, 0.205);
+            }   
+        }
+
+        #part1{
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            img{
+                width: 800px;
+                height: 100%;
+            }
+
+            h1{
+                grid-column: 1/2;
+                width: 600px;
+            }
+        }
+    }
+}

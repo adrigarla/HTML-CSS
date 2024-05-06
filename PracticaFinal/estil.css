@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Regular';
+  src: url(Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff), url(Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2);
+}
+@font-face {
+  font-family: 'Bold';
+  src: url(Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff), url(Satoshi_Complete/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2);
+}
+html {
+  height: 100vh;
+}
+html body {
+  background-image: url("assets/back1.jpg");
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  color: white;
+}
+html body .p3,
+html body .p2,
+html body .p3 {
+  font-family: 'Regular', sans-serif;
+}
+html body h1,
+html body h2 {
+  font-family: 'Bold', sans-serif;
+}
+html body .p3 {
+  font-size: 12px;
+}
+html body .p2 {
+  font-size: 14px;
+}
+html body .p1 {
+  font-size: 16px;
+}
+html body h1 {
+  font-size: 80px;
+}
+html body h2 {
+  font-size: 56px;
+}
+html body header {
+  background-color: transparent;
+}
+html body header .opacitatBuscador {
+  background-color: rgba(255, 255, 255, 0.205);
+}
+html body #part1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+html body #part1 img {
+  width: 800px;
+  height: 100%;
+}
+html body #part1 h1 {
+  grid-column: 1/2;
+  width: 600px;
+}
