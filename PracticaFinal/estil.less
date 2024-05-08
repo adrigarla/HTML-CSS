@@ -14,9 +14,9 @@ html{
 
     body{
         background-image: url("./assets/back1.jpg");
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: 20px;
+
+        margin-left: 200px;
+        margin-right: 200px;
 
         color: white;
 
@@ -37,18 +37,26 @@ html{
         }
 
         #part1{
+            margin-top: 30px;
             display: grid;
 
             grid-template-columns: 1fr 1fr;
+           
 
-            img{
-                width: 800px;
-                height: 100%;
+            #partdreta{
+                img{
+                    width: 800px;
+                    height: 100%;
+                }
             }
-
-            h1{
-                grid-column: 1/2;
+            
+            #partesquerra{
                 width: 600px;
+
+                margin-top: 90px;
+                p{
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                }
             }
         }
     }

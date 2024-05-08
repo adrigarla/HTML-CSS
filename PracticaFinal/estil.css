@@ -11,9 +11,8 @@ html {
 }
 html body {
   background-image: url("assets/back1.jpg");
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
   color: white;
 }
 html body .p3,
@@ -47,14 +46,18 @@ html body header .opacitatBuscador {
   background-color: rgba(255, 255, 255, 0.205);
 }
 html body #part1 {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-html body #part1 img {
+html body #part1 #partdreta img {
   width: 800px;
   height: 100%;
 }
-html body #part1 h1 {
-  grid-column: 1/2;
+html body #part1 #partesquerra {
   width: 600px;
+  margin-top: 90px;
+}
+html body #part1 #partesquerra p {
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
