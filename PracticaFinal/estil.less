@@ -57,6 +57,80 @@ html{
                 p{
                     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
                 }
+
+                .container {
+                    display: flex;
+                    align-items: start;
+
+                    margin-top: 30px;
+
+                    padding: 0;
+                    
+                    .estrella {
+                        background-image: url(./assets/icones_sprite.png);
+                        background-repeat: no-repeat;
+                        width: 30px;
+                        height: 30px;
+                        background-size: 550px;
+                        float: left;
+                    }
+                    
+                    .p2 {
+                        margin: 0;
+                        display: flex;
+                        align-items: start;
+                        width: 400px;
+    
+                        margin-top: 3px;
+                    }
+                }
+
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    margin-top: 40px;
+                    // background-color: #3ddeed;
+                    background-color: transparent;
+                    border: 2px solid transparent;
+                    color: white;
+                    box-shadow: 0 0 2px 1px #3ddeed;
+                    transition: box-shadow 0.3s;
+
+                    color: #182627;
+
+                    .flecha{
+                        display: flex;
+                        align-items: center;
+
+                        background-image: url(./assets/icones_sprite.png);
+                        
+                        background-repeat: no-repeat;
+                        width: 30px;
+                        height: 30px;
+                        background-size: 550px;
+                        float: right;
+                        background-position: -430px 0;
+
+                        filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
+
+                        margin-left: 10px;
+                    }
+
+                    .brujula{
+                        background-image: url(./assets/icones_sprite.png);
+                        
+                        background-repeat: no-repeat;
+                        width: 400px;
+                        height: 30px;
+                        background-size: 30px;
+                        float: right;
+                        background-position: -430px 0;
+                    }
+
+                    float: left;
+                }
             }
         }
     }

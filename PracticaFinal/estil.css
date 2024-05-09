@@ -61,3 +61,59 @@ html body #part1 #partesquerra {
 html body #part1 #partesquerra p {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+html body #part1 #partesquerra .container {
+  display: flex;
+  align-items: start;
+  margin-top: 30px;
+  padding: 0;
+}
+html body #part1 #partesquerra .container .estrella {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 550px;
+  float: left;
+}
+html body #part1 #partesquerra .container .p2 {
+  margin: 0;
+  display: flex;
+  align-items: start;
+  width: 400px;
+  margin-top: 3px;
+}
+html body #part1 #partesquerra button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: white;
+  box-shadow: 0 0 2px 1px #3ddeed;
+  transition: box-shadow 0.3s;
+  color: #182627;
+  float: left;
+}
+html body #part1 #partesquerra button .flecha {
+  display: flex;
+  align-items: center;
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 550px;
+  float: right;
+  background-position: -430px 0;
+  filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
+  margin-left: 10px;
+}
+html body #part1 #partesquerra button .brujula {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 30px;
+  background-size: 30px;
+  float: right;
+  background-position: -430px 0;
+}
