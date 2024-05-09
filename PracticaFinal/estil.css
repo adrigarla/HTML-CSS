@@ -17,7 +17,7 @@ html body {
 }
 html body .p3,
 html body .p2,
-html body .p3 {
+html body .p1 {
   font-family: 'Regular', sans-serif;
 }
 html body h1,
@@ -41,25 +41,83 @@ html body h2 {
 }
 html body header {
   background-color: transparent;
+  margin-top: 30px;
 }
 html body header .opacitatBuscador {
   background-color: rgba(255, 255, 255, 0.205);
 }
+html body header .navegacio {
+  display: flex;
+  justify-content: center;
+}
+html body header .navegacio p {
+  padding: 20px;
+  margin-left: 30px;
+}
 html body #part1 {
-  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 html body #part1 #partdreta img {
-  width: 800px;
-  height: 100%;
+  width: 680px;
+  height: 640px;
+  clip-path: inset(10% 0 0 0);
+}
+html body #part1 #partdreta .paraules p {
+  position: absolute;
+}
+html body #part1 #partdreta .paraules p:nth-child(1) {
+  top: 235px;
+  left: 1065px;
+  color: #1ba1ad;
+}
+html body #part1 #partdreta .paraules p:nth-child(2) {
+  top: 276px;
+  left: 870px;
+}
+html body #part1 #partdreta .paraules p:nth-child(3) {
+  top: 224px;
+  left: 980px;
+}
+html body #part1 #partdreta .paraules p:nth-child(4) {
+  top: 257px;
+  right: 110px;
+  color: #1ba1ad;
+}
+html body #part1 #partdreta .dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body #part1 #partdreta .dos div {
+  display: flex;
+  align-items: center;
+}
+html body #part1 #partdreta .dos div div {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 850px;
+  float: right;
+  float: left;
+}
+html body #part1 #partdreta .dos div .em1 {
+  background-position: -150px -10px;
+}
+html body #part1 #partdreta .dos div .em2 {
+  background-position: -105px -8px;
+  margin-left: 40px;
+}
+html body #part1 #partdreta .dos div p {
+  margin-left: 10px;
 }
 html body #part1 #partesquerra {
   width: 600px;
-  margin-top: 90px;
+  margin-top: 40px;
 }
-html body #part1 #partesquerra p {
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+html body #part1 #partesquerra .exp {
+  margin-top: 40px;
 }
 html body #part1 #partesquerra .container {
   display: flex;
@@ -82,38 +140,88 @@ html body #part1 #partesquerra .container .p2 {
   width: 400px;
   margin-top: 3px;
 }
-html body #part1 #partesquerra button {
+html body #part1 #partesquerra .botons {
+  display: flex;
+  align-items: center;
+}
+html body #part1 #partesquerra .botons button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  background-color: transparent;
-  border: 2px solid transparent;
-  color: white;
-  box-shadow: 0 0 2px 1px #3ddeed;
-  transition: box-shadow 0.3s;
-  color: #182627;
+  margin-top: 50px;
+  padding: 10px;
   float: left;
+  border-radius: 5px;
 }
-html body #part1 #partesquerra button .flecha {
+html body #part1 #partesquerra .botons button .flecha {
   display: flex;
   align-items: center;
   background-image: url(assets/icones_sprite.png);
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
-  background-size: 550px;
+  background-size: 650px;
   float: right;
-  background-position: -430px 0;
+  background-position: -510px 0;
   filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
   margin-left: 10px;
 }
-html body #part1 #partesquerra button .brujula {
+html body #part1 #partesquerra .botons button .brujula {
   background-image: url(assets/icones_sprite.png);
   background-repeat: no-repeat;
-  width: 400px;
-  height: 30px;
-  background-size: 30px;
+  width: 40px;
+  height: 40px;
+  background-size: 800px;
   float: right;
-  background-position: -430px 0;
+  background-position: -180px 0;
+}
+html body #part1 #partesquerra .botons button .p1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+html body #part1 #partesquerra .botons .bot1 {
+  background-color: #3ddeed;
+  border: 2px solid transparent;
+  color: white;
+  box-shadow: 0 0 2px 1px #3ddeed;
+  transition: box-shadow 0.3s;
+  color: #182627;
+  height: 50px;
+}
+html body #part1 #partesquerra .botons .bot2 {
+  margin-left: 10px;
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 0 3px 1px white;
+  height: 45px;
+}
+html body #part1 #partesquerra .p2 {
+  margin-top: 30px;
+}
+html body #part1 #partesquerra .emoticonos {
+  display: flex;
+}
+html body #part1 #partesquerra .emoticonos div {
+  background-image: url('assets/icones_sprite.png');
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 750px;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+html body #part1 #partesquerra .emoticonos .e1 {
+  background-position: -209px -2px;
+}
+html body #part1 #partesquerra .emoticonos .e2 {
+  background-position: -251px -2px;
+}
+html body #part1 #partesquerra .emoticonos .e3 {
+  background-position: -293px -2px;
+}
+html body #part1 #partesquerra .emoticonos .e4 {
+  background-position: -335px -2px;
 }

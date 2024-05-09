@@ -20,7 +20,7 @@ html{
 
         color: white;
 
-        .p3,.p2,.p3{font-family: 'Regular', sans-serif;}
+        .p3,.p2,.p1{font-family: 'Regular', sans-serif;}
 
         h1,h2{font-family: 'Bold', sans-serif;}
 
@@ -34,28 +34,110 @@ html{
             .opacitatBuscador{
                 background-color: rgba(255, 255, 255, 0.205);
             }   
+
+            .navegacio{
+                display: flex;
+                justify-content: center;
+
+                p{
+                    padding: 20px;
+                    margin-left: 30px;
+                }
+            }
+
+            margin-top: 30px;
         }
 
         #part1{
-            margin-top: 30px;
             display: grid;
 
             grid-template-columns: 1fr 1fr;
            
 
             #partdreta{
+               
                 img{
-                    width: 800px;
-                    height: 100%;
+                    width: 680px;
+                    height: 640px;
+
+                    clip-path: inset(10% 0 0 0);
                 }
+
+                .paraules{
+                    p{
+                        position: absolute;
+                    }
+
+                    p:nth-child(1){
+                        top: 235px;
+                        left: 1065px;
+
+                        color: #1ba1ad;
+                    }
+
+                    p:nth-child(2){
+                        top: 276px;
+                        left: 870px;
+                    }
+
+                    p:nth-child(3){
+                        top: 224px;
+                        left: 980px;
+                    }
+
+                    p:nth-child(4){
+                        top: 257px;
+                        right: 110px;
+
+                        color: #1ba1ad;
+                    }
+                }
+
+                .dos{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div{
+                        display: flex;
+                        align-items: center;
+
+                        div{
+                            background-image: url(./assets/icones_sprite.png);
+                                
+                            background-repeat: no-repeat;
+                            width: 30px;
+                            height: 30px;
+                            background-size: 850px;
+                            float: right;
+                            float: left;
+                        }
+
+                        .em1{
+                            background-position: -150px -10px;
+                        }
+
+                        .em2{
+                            background-position: -105px -8px;
+                            margin-left: 40px;
+                        }
+
+                        p{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                
+                
             }
             
             #partesquerra{
                 width: 600px;
 
-                margin-top: 90px;
-                p{
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                margin-top: 40px;
+
+                .exp {
+                    margin-top: 40px;
                 }
 
                 .container {
@@ -85,51 +167,117 @@ html{
                     }
                 }
 
-                button{
+                .botons{
                     display: flex;
-                    justify-content: center;
                     align-items: center;
 
-                    margin-top: 40px;
-                    // background-color: #3ddeed;
-                    background-color: transparent;
-                    border: 2px solid transparent;
-                    color: white;
-                    box-shadow: 0 0 2px 1px #3ddeed;
-                    transition: box-shadow 0.3s;
-
-                    color: #182627;
-
-                    .flecha{
+                    button{
                         display: flex;
+                        justify-content: center;
                         align-items: center;
+    
+                        margin-top: 50px;
+    
+                        .flecha{
+                            display: flex;
+                            align-items: center;
+    
+                            background-image: url(./assets/icones_sprite.png);
+                            
+                            background-repeat: no-repeat;
+                            width: 30px;
+                            height: 30px;
+                            background-size: 650px;
+                            float: right;
+                            background-position: -510px 0;
+    
+                            filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
+    
+                            margin-left: 10px;
+                        }
+    
+                        .brujula{
+                            background-image: url(./assets/icones_sprite.png);
+                            
+                            background-repeat: no-repeat;
+                            width: 40px;
+                            height: 40px;
+                            background-size: 800px;
+                            float: right;
+                            background-position: -180px 0;
+                        }
+    
+                        .p1{
+                            display: flex;  
+                            align-items: center;
+                            margin-bottom: 0;
+                        }
+    
+                        padding: 10px;
+                        float: left;
+    
+                        border-radius: 5px;
+                    }
+    
+                    .bot1{
+                        background-color: #3ddeed;
+                        border: 2px solid transparent;
+                        color: white;
+                        box-shadow: 0 0 2px 1px #3ddeed;
+                        transition: box-shadow 0.3s;
+    
+                        color: #182627;
+    
+                        height: 50px;
+                    }
+    
+                    .bot2{
+                        margin-left: 10px;
+                        background-color: transparent;
+                        color: white;
+                        box-shadow: 0 0 3px 1px white;
+    
+                        height: 45px;
+                    }
+                }
 
-                        background-image: url(./assets/icones_sprite.png);
-                        
+                .p2{
+                    margin-top: 30px;
+                }
+
+                .emoticonos{
+                    display: flex;
+
+                    div{
+                        background-image: url('./assets/icones_sprite.png');
                         background-repeat: no-repeat;
-                        width: 30px;
-                        height: 30px;
-                        background-size: 550px;
-                        float: right;
-                        background-position: -430px 0;
+                        width: 40px;
+                        height: 40px;
+                        background-size: 750px;
+                        border: 1px solid white;
+                        padding: 7px;
 
-                        filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
+
+                        border-radius: 3px;
 
                         margin-left: 10px;
                     }
 
-                    .brujula{
-                        background-image: url(./assets/icones_sprite.png);
-                        
-                        background-repeat: no-repeat;
-                        width: 400px;
-                        height: 30px;
-                        background-size: 30px;
-                        float: right;
-                        background-position: -430px 0;
+                    .e1{
+                        background-position: -209px -2px;
                     }
 
-                    float: left;
+                    .e2{
+                        background-position: -251px -2px;
+                    }
+
+                    .e3{
+                        background-position: -293px -2px;
+                    }
+
+                    .e4{
+                        background-position: -335px -2px;
+                    }
                 }
             }
         }
