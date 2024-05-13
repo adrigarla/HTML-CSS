@@ -10,9 +10,6 @@ html {
   height: 100vh;
 }
 html body {
-  background-image: url("assets/back1.jpg");
-  margin-left: 200px;
-  margin-right: 200px;
   color: white;
 }
 html body .p3,
@@ -39,93 +36,97 @@ html body h1 {
 html body h2 {
   font-size: 56px;
 }
-html body header {
-  background-color: transparent;
-  margin-top: 30px;
+html body #fons1 {
+  background-image: url("assets/back1.jpg");
 }
-html body header .opacitatBuscador {
+html body #fons1 .div1 {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+html body #fons1 .div1 header {
+  background-color: transparent;
+}
+html body #fons1 .div1 header .opacitatBuscador {
   background-color: rgba(255, 255, 255, 0.205);
 }
-html body header .navegacio {
+html body #fons1 .div1 header .navegacio {
   display: flex;
   justify-content: center;
 }
-html body header .navegacio p {
+html body #fons1 .div1 header .navegacio p:not(:first-of-type) {
   padding: 20px;
   margin-left: 30px;
 }
-html body #part1 {
+html body #fons1 .div1 #part1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-html body #part1 #partdreta img {
-  width: 680px;
+html body #fons1 .div1 #part1 #partdreta img {
+  width: 720px;
   height: 640px;
-  clip-path: inset(10% 0 0 0);
 }
-html body #part1 #partdreta .paraules p {
+html body #fons1 .div1 #part1 #partdreta .paraules p {
   position: absolute;
 }
-html body #part1 #partdreta .paraules p:nth-child(1) {
-  top: 235px;
-  left: 1065px;
+html body #fons1 .div1 #part1 #partdreta .paraules p:nth-child(1) {
+  top: 210px;
+  left: 1070px;
   color: #1ba1ad;
 }
-html body #part1 #partdreta .paraules p:nth-child(2) {
-  top: 276px;
-  left: 870px;
+html body #fons1 .div1 #part1 #partdreta .paraules p:nth-child(2) {
+  top: 248px;
+  left: 880px;
 }
-html body #part1 #partdreta .paraules p:nth-child(3) {
-  top: 224px;
-  left: 980px;
+html body #fons1 .div1 #part1 #partdreta .paraules p:nth-child(3) {
+  top: 305px;
+  left: 990px;
 }
-html body #part1 #partdreta .paraules p:nth-child(4) {
-  top: 257px;
-  right: 110px;
+html body #fons1 .div1 #part1 #partdreta .paraules p:nth-child(4) {
+  top: 336px;
+  right: 325px;
   color: #1ba1ad;
 }
-html body #part1 #partdreta .dos {
+html body #fons1 .div1 #part1 #partdreta .dos {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-html body #part1 #partdreta .dos div {
+html body #fons1 .div1 #part1 #partdreta .dos div {
   display: flex;
   align-items: center;
 }
-html body #part1 #partdreta .dos div div {
+html body #fons1 .div1 #part1 #partdreta .dos div div {
   background-image: url(assets/icones_sprite.png);
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
   background-size: 850px;
-  float: right;
-  float: left;
 }
-html body #part1 #partdreta .dos div .em1 {
+html body #fons1 .div1 #part1 #partdreta .dos div .em1 {
   background-position: -150px -10px;
 }
-html body #part1 #partdreta .dos div .em2 {
+html body #fons1 .div1 #part1 #partdreta .dos div .em2 {
   background-position: -105px -8px;
   margin-left: 40px;
 }
-html body #part1 #partdreta .dos div p {
+html body #fons1 .div1 #part1 #partdreta .dos div p {
   margin-left: 10px;
+  margin-top: 10px;
 }
-html body #part1 #partesquerra {
+html body #fons1 .div1 #part1 #partesquerra {
   width: 600px;
   margin-top: 40px;
 }
-html body #part1 #partesquerra .exp {
+html body #fons1 .div1 #part1 #partesquerra .exp {
   margin-top: 40px;
 }
-html body #part1 #partesquerra .container {
+html body #fons1 .div1 #part1 #partesquerra .container {
   display: flex;
   align-items: start;
   margin-top: 30px;
   padding: 0;
 }
-html body #part1 #partesquerra .container .estrella {
+html body #fons1 .div1 #part1 #partesquerra .container .estrella {
   background-image: url(assets/icones_sprite.png);
   background-repeat: no-repeat;
   width: 30px;
@@ -133,18 +134,18 @@ html body #part1 #partesquerra .container .estrella {
   background-size: 550px;
   float: left;
 }
-html body #part1 #partesquerra .container .p2 {
+html body #fons1 .div1 #part1 #partesquerra .container .p2 {
   margin: 0;
   display: flex;
   align-items: start;
   width: 400px;
   margin-top: 3px;
 }
-html body #part1 #partesquerra .botons {
+html body #fons1 .div1 #part1 #partesquerra .botons {
   display: flex;
   align-items: center;
 }
-html body #part1 #partesquerra .botons button {
+html body #fons1 .div1 #part1 #partesquerra .botons button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +154,7 @@ html body #part1 #partesquerra .botons button {
   float: left;
   border-radius: 5px;
 }
-html body #part1 #partesquerra .botons button .flecha {
+html body #fons1 .div1 #part1 #partesquerra .botons button .flecha {
   display: flex;
   align-items: center;
   background-image: url(assets/icones_sprite.png);
@@ -166,7 +167,7 @@ html body #part1 #partesquerra .botons button .flecha {
   filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
   margin-left: 10px;
 }
-html body #part1 #partesquerra .botons button .brujula {
+html body #fons1 .div1 #part1 #partesquerra .botons button .brujula {
   background-image: url(assets/icones_sprite.png);
   background-repeat: no-repeat;
   width: 40px;
@@ -175,12 +176,12 @@ html body #part1 #partesquerra .botons button .brujula {
   float: right;
   background-position: -180px 0;
 }
-html body #part1 #partesquerra .botons button .p1 {
+html body #fons1 .div1 #part1 #partesquerra .botons button .p1 {
   display: flex;
   align-items: center;
   margin-bottom: 0;
 }
-html body #part1 #partesquerra .botons .bot1 {
+html body #fons1 .div1 #part1 #partesquerra .botons .bot1 {
   background-color: #3ddeed;
   border: 2px solid transparent;
   color: white;
@@ -189,20 +190,20 @@ html body #part1 #partesquerra .botons .bot1 {
   color: #182627;
   height: 50px;
 }
-html body #part1 #partesquerra .botons .bot2 {
+html body #fons1 .div1 #part1 #partesquerra .botons .bot2 {
   margin-left: 10px;
   background-color: transparent;
   color: white;
   box-shadow: 0 0 3px 1px white;
   height: 45px;
 }
-html body #part1 #partesquerra .p2 {
+html body #fons1 .div1 #part1 #partesquerra .p2 {
   margin-top: 30px;
 }
-html body #part1 #partesquerra .emoticonos {
+html body #fons1 .div1 #part1 #partesquerra .emoticonos {
   display: flex;
 }
-html body #part1 #partesquerra .emoticonos div {
+html body #fons1 .div1 #part1 #partesquerra .emoticonos div {
   background-image: url('assets/icones_sprite.png');
   background-repeat: no-repeat;
   width: 40px;
@@ -213,15 +214,35 @@ html body #part1 #partesquerra .emoticonos div {
   border-radius: 3px;
   margin-left: 10px;
 }
-html body #part1 #partesquerra .emoticonos .e1 {
+html body #fons1 .div1 #part1 #partesquerra .emoticonos .e1 {
   background-position: -209px -2px;
 }
-html body #part1 #partesquerra .emoticonos .e2 {
+html body #fons1 .div1 #part1 #partesquerra .emoticonos .e2 {
   background-position: -251px -2px;
 }
-html body #part1 #partesquerra .emoticonos .e3 {
+html body #fons1 .div1 #part1 #partesquerra .emoticonos .e3 {
   background-position: -293px -2px;
 }
-html body #part1 #partesquerra .emoticonos .e4 {
+html body #fons1 .div1 #part1 #partesquerra .emoticonos .e4 {
   background-position: -335px -2px;
+}
+html body #part2 {
+  background-image: url('assets/back2.png');
+}
+html body #part2 .contingut2 .ulleres img {
+  height: 100%;
+  width: 900px;
+}
+html body #part2 .contingut2 .col2 {
+  margin-top: 60px;
+}
+html body #part2 .contingut2 .col2 h2 {
+  width: 550px;
+}
+html body #part2 .contingut2 .col2 .p1 {
+  background-image: url('assets/icones_sprite.png');
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: left 300px right 300px;
+  width: 350px;
 }
