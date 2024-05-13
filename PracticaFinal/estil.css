@@ -243,6 +243,6 @@ html body #part2 .contingut2 .col2 .p1 {
   background-image: url('assets/icones_sprite.png');
   background-repeat: no-repeat;
   background-size: 650px;
-  background-position: left 300px right 300px;
+  background-position: -40px;
   width: 350px;
 }
