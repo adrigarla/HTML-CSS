@@ -166,6 +166,7 @@ html body #fons1 .div1 #part1 #partesquerra .botons button .flecha {
   background-position: -510px 0;
   filter: invert(71%) sepia(13%) saturate(7500%) hue-rotate(180deg) brightness(96%) contrast(213%);
   margin-left: 10px;
+  margin-bottom: 5px;
 }
 html body #fons1 .div1 #part1 #partesquerra .botons button .brujula {
   background-image: url(assets/icones_sprite.png);
@@ -231,10 +232,10 @@ html body #part2 {
 }
 html body #part2 .contingut2 .ulleres img {
   height: 100%;
-  width: 900px;
+  width: 800px;
 }
 html body #part2 .contingut2 .col2 {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 html body #part2 .contingut2 .col2 h2 {
   width: 550px;
@@ -244,4 +245,82 @@ html body #part2 .contingut2 .col2 .p1 {
   background-size: 650px;
   background-position: -40px;
   width: 350px;
+}
+html body #part2 .contingut3 {
+  margin-left: 200px;
+}
+html body #part2 .contingut3 .jane {
+  width: 450px;
+}
+html body #part2 .contingut3 .vhead {
+  width: 620px;
+}
+html body #part2 .contingut3 button {
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182627;
+  color: #3ddeed;
+  padding: 10px;
+}
+html body #part2 .contingut3 button .flecha {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 650px;
+  float: right;
+  background-position: -510px 0;
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+html body #part2 .contingut3 .play {
+  height: 100%;
+  width: 550px;
+  clip-path: polygon(36% 3%, 100% 0, 100% 71%, 69% 100%, 0 100%, 1% 31%);
+}
+html body #part2 .contingut4 {
+  margin-left: 200px;
+  margin-top: 220px;
+}
+html body #part2 .contingut4 .botons {
+  display: flex;
+}
+html body #part2 .contingut4 .botons button {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182627;
+  color: #3ddeed;
+}
+html body #part2 .contingut4 .botons button .flecha {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 650px;
+  float: right;
+  background-position: -510px 0;
+  margin-bottom: 5px;
+}
+html body #part2 .contingut4 .botons button:nth-child(2) {
+  margin-left: 10px;
+}
+html body #part2 .contingut4 .p3 {
+  width: 250px;
+}
+html body #part2 .contingut4 img {
+  height: 100%;
+  width: 400px;
+  clip-path: polygon(78% 0, 100% 19%, 100% 100%, 0 100%, 0 0);
+}
+html body #part2 .contingut4 .row2 {
+  display: flex;
+  align-items: center;
+}
+html body #part2 .contingut4 .p1 {
+  margin-left: 65px;
 }
