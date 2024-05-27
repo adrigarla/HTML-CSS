@@ -240,10 +240,16 @@ html body #part2 .contingut2 .col2 {
 html body #part2 .contingut2 .col2 h2 {
   width: 550px;
 }
-html body #part2 .contingut2 .col2 .p1 {
-  background-image: url('assets/icones_sprite.png');
+html body #part2 .contingut2 .col2 .estblava {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
   background-size: 650px;
-  background-position: -40px;
+  float: right;
+  background-position: -40px 0;
+}
+html body #part2 .contingut2 .col2 .p1 {
   width: 350px;
 }
 html body #part2 .contingut3 {
@@ -280,8 +286,41 @@ html body #part2 .contingut3 .play {
   width: 550px;
   clip-path: polygon(36% 3%, 100% 0, 100% 71%, 69% 100%, 0 100%, 1% 31%);
 }
+html body #part2 .contingut3 .fotos {
+  margin-top: 20px;
+  position: relative;
+}
+html body #part2 .contingut3 .fotos .imgg {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 40px;
+  height: auto;
+  border: 2px solid black;
+  position: absolute;
+}
+html body #part2 .contingut3 .fotos .imgg:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+html body #part2 .contingut3 .fotos .imgg:nth-child(2) {
+  left: 30px;
+}
+html body #part2 .contingut3 .fotos .imgg:nth-child(3) {
+  left: 60px;
+}
+html body #part2 .contingut3 .fotos .imgg:nth-child(4) {
+  left: 90px;
+}
+html body #part2 .contingut3 .fotos .imgg:nth-child(5) {
+  left: 120px;
+}
+html body #part2 .contingut3 .fotos .text {
+  position: absolute;
+  left: 190px;
+  top: 15px;
+}
 html body #part2 .contingut4 {
   margin-left: 200px;
+  margin-right: 200px;
   margin-top: 220px;
 }
 html body #part2 .contingut4 .botons {
@@ -323,4 +362,48 @@ html body #part2 .contingut4 .row2 {
 }
 html body #part2 .contingut4 .p1 {
   margin-left: 65px;
+}
+html body #part2 .contingut5 {
+  margin-top: 100px;
+}
+html body #part2 .contingut5 .accordion .accordion-item {
+  color: white;
+  background-color: #271e33;
+}
+html body #part2 .contingut5 .accordion .accordion-item p {
+  width: 570px;
+}
+html body #part2 .contingut5 .accordion .accordion-item .accordion-header {
+  border: none;
+}
+html body #part2 .contingut5 .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #271e33;
+  color: white;
+}
+html body #part2 footer .logo {
+  height: auto;
+  width: 180px;
+}
+html body #part2 footer .emotes {
+  display: flex;
+}
+html body #part2 footer .emotes div {
+  background-image: url('assets/icones_sprite.png');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 750px;
+  margin-left: 20px;
+}
+html body #part2 footer .emotes .em1 {
+  background-position: -210px;
+}
+html body #part2 footer .emotes .em2 {
+  background-position: -253px;
+}
+html body #part2 footer .emotes .em3 {
+  background-position: -293px;
+}
+html body #part2 footer .emotes .em4 {
+  background-position: -335px;
 }

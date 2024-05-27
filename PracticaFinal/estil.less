@@ -300,12 +300,19 @@ html{
                     h2{
                         width: 550px;
                     }
-                    
-                    .p1{
-                        background-image: url('./assets/icones_sprite.png');
-                        background-size: 650px;
-                        background-position: -40px;
 
+                    .estblava{
+                        background-image: url(./assets/icones_sprite.png);
+                                        
+                        background-repeat: no-repeat;
+                        width: 30px;
+                        height: 30px;
+                        background-size: 650px;
+                        float: right;
+                        background-position: -40px 0;
+                    }
+
+                    .p1{
                         width: 350px;
                     }
                 }
@@ -351,10 +358,52 @@ html{
                     width: 550px;
                     clip-path: polygon(36% 3%, 100% 0, 100% 71%, 69% 100%, 0 100%, 1% 31%);
                 }
+
+                .fotos{
+                    margin-top: 20px;
+                    
+                    position: relative;
+                    .imgg {
+                        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                        width: 40px;
+                        height: auto;
+                        border: 2px solid black;
+                        position: absolute;
+                    }
+  
+                    .imgg:nth-child(1) {
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .imgg:nth-child(2) {
+                        left: 30px;
+                    }
+
+                    .imgg:nth-child(3) {
+                        left: 60px;
+                    }
+
+                    .imgg:nth-child(4) {
+                        left: 90px;
+                    }
+
+                    .imgg:nth-child(5) {
+                        left: 120px;
+                    }
+
+                    .text{
+                        position: absolute;
+
+                        left: 190px;
+                        top: 15px;
+                    }
+                }     
             }
 
             .contingut4{
                 margin-left: 200px;
+                margin-right: 200px;
                 margin-top: 220px;
                 .botons{
                     display: flex;
@@ -404,6 +453,64 @@ html{
 
                 .p1{
                     margin-left: 65px;
+                }
+            }
+
+            .contingut5{
+                margin-top: 100px;
+                
+                .accordion{
+                    .accordion-item{
+                        color: white;
+                        background-color: #271e33;
+
+                        p{
+                            width: 570px;
+                        }
+                        .accordion-header{
+                            border: none;
+                            .accordion-button{
+                                background-color: #271e33;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer{
+                .logo{
+                    height: auto;
+                    width: 180px;
+                }
+
+                .emotes{
+                    display: flex;
+
+                    div{
+                        background-image: url('./assets/icones_sprite.png');
+                        background-repeat: no-repeat;
+                        width: 30px;
+                        height: 30px;
+                        background-size: 750px;
+
+                        margin-left: 20px;
+                    }
+                    .em1{
+                        background-position: -210px;
+                    }
+
+                    .em2{
+                        background-position: -253px;
+                    }
+
+                    .em3{
+                        background-position: -293px;
+                    }
+
+                    .em4{
+                        background-position: -335px;
+                    }
                 }
             }
         }
