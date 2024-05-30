@@ -49,6 +49,34 @@ html body #fons1 .div1 header {
 html body #fons1 .div1 header .opacitatBuscador {
   background-color: rgba(255, 255, 255, 0.205);
 }
+html body #fons1 .div1 header .opacitatBuscador .form-control {
+  background-color: transparent;
+  border: none;
+}
+html body #fons1 .div1 header .opacitatBuscador .btn {
+  width: 50px;
+  height: 50px;
+}
+html body #fons1 .div1 header .opacitatBuscador .btn .lupa {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 750px;
+  background-position: -630px;
+}
+html body #fons1 .div1 header .si {
+  display: flex;
+  align-items: center;
+}
+html body #fons1 .div1 header .si .bosa {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 750px;
+  background-position: -710px;
+}
 html body #fons1 .div1 header .navegacio {
   display: flex;
   justify-content: center;
@@ -230,6 +258,9 @@ html body #fons1 .div1 #part1 #partesquerra .emoticonos .e4 {
 html body #part2 {
   background-image: url('assets/back2.png');
 }
+html body #part2 .contingut2 .ulleres {
+  border-radius: 50%;
+}
 html body #part2 .contingut2 .ulleres img {
   height: 100%;
   width: 800px;
@@ -281,10 +312,72 @@ html body #part2 .contingut3 button .flecha {
   margin-left: 15px;
   margin-bottom: 1px;
 }
-html body #part2 .contingut3 .play {
+html body #part2 .contingut3 .superpos {
+  position: relative;
+}
+html body #part2 .contingut3 .superpos .play {
   height: 100%;
   width: 550px;
-  clip-path: polygon(36% 3%, 100% 0, 100% 71%, 69% 100%, 0 100%, 1% 31%);
+  clip-path: polygon(39% 0, 100% 0, 100% 63%, 70% 100%, 0 100%, 0 35%);
+}
+html body #part2 .contingut3 .superpos .twit {
+  height: 250px;
+  width: 340px;
+  background-color: white;
+  position: absolute;
+  top: 260px;
+  left: -130px;
+  color: black;
+}
+html body #part2 .contingut3 .superpos .twit img {
+  border-radius: 50%;
+  width: 60px;
+}
+html body #part2 .contingut3 .superpos .twit .gris {
+  color: #868383;
+}
+html body #part2 .contingut3 .superpos .twit .blau {
+  color: #00c3ff;
+}
+html body #part2 .contingut3 .superpos .twit .coment {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 850px;
+  float: right;
+  background-position: -430px -4px;
+  margin-left: 35px;
+}
+html body #part2 .contingut3 .superpos .twit .rtt {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 850px;
+  float: right;
+  background-position: -575px -4px;
+  margin-left: 35px;
+}
+html body #part2 .contingut3 .superpos .twit .cor {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 850px;
+  float: right;
+  background-position: -480px -4px;
+  margin-left: 35px;
+}
+html body #part2 .contingut3 .superpos .twit .desc {
+  background-image: url(assets/icones_sprite.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 850px;
+  float: right;
+  background-position: -530px -4px;
+  margin-left: 35px;
 }
 html body #part2 .contingut3 .fotos {
   margin-top: 20px;
@@ -380,14 +473,19 @@ html body #part2 .contingut5 .accordion .accordion-item .accordion-header .accor
   background-color: #271e33;
   color: white;
 }
-html body #part2 footer .logo {
+html body #part2 footer {
+  background-color: #271e33;
+  width: 100%;
+  margin-top: 50px;
+}
+html body #part2 footer div .logo {
   height: auto;
   width: 180px;
 }
-html body #part2 footer .emotes {
+html body #part2 footer div .emotes {
   display: flex;
 }
-html body #part2 footer .emotes div {
+html body #part2 footer div .emotes div {
   background-image: url('assets/icones_sprite.png');
   background-repeat: no-repeat;
   width: 30px;
@@ -395,15 +493,34 @@ html body #part2 footer .emotes div {
   background-size: 750px;
   margin-left: 20px;
 }
-html body #part2 footer .emotes .em1 {
+html body #part2 footer div .emotes .em1 {
   background-position: -210px;
 }
-html body #part2 footer .emotes .em2 {
+html body #part2 footer div .emotes .em2 {
   background-position: -253px;
 }
-html body #part2 footer .emotes .em3 {
+html body #part2 footer div .emotes .em3 {
   background-position: -293px;
 }
-html body #part2 footer .emotes .em4 {
+html body #part2 footer div .emotes .em4 {
   background-position: -335px;
+}
+html body #part2 footer div .sub .form-control {
+  height: 60px;
+  background-color: #271e33;
+  border: 1px solid #494949;
+}
+html body #part2 footer div .sub .btn-primary {
+  height: 60px;
+  width: 100px;
+}
+html body #part2 footer div .col1 {
+  margin-left: 200px;
+}
+html body #part2 footer div .col4 {
+  margin-right: 200px;
+}
+html body #part2 footer hr {
+  height: 3px;
+  background: linear-gradient(to right, transparent, purple, transparent);
 }
