@@ -16,7 +16,7 @@
         <header>
           <nav class="navbar navbar-expand-lg navbar-light m-auto">
             <div class="container-fluid">
-                <div class="navegacio">
+                <div class="navegacio d-none d-lg-block d-lg-flex">
                     <p class="navbar textNav p2">Home</p>
                     <p class="navbar textNav p2">Catalog</p>
                     <p class="navbar textNav p2">Contact</p>
@@ -28,7 +28,7 @@
                 <div class="d-flex">
                   <form class="d-flex">
                       <div class="input-group opacitatBuscador">
-                          <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar">
+                          <input class="form-control d-none d-lg-flex" type="search" placeholder="Buscar" aria-label="Buscar">
                           <button class="btn" type="submit">
                               <p class="lupa mt-1"></p>
                           </button>
@@ -42,7 +42,7 @@
           </nav>
         </header>
 
-        <!-- <div id="part1">
+        <div id="part1">
           <div id="partesquerra">
             <p class="p1">VIRTUAL HEADSETS</p>
             <h1 class="exp">Experience a new dimension of reality</h1>
@@ -70,7 +70,7 @@
           </div>
           <div id="partdreta">
             <img src="./assets/jhonn.png">
-            <div class="paraules">
+            <div class="paraules d-sm-none">
               <p class="p3">Hello, Jhon</p>
               <p class="p3">Discover new world</p>
               <p class="p3">Ultra reality</p>
@@ -87,17 +87,17 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
 
-    <!-- <div id="part2" class="container-fluid">
+    <div id="part2" class="container-fluid">
       <div class="contingut2">
         <div class="row">
-          <div class="col ulleres">
+          <div class="col-lg col-sm ulleres order-sm-2 order-lg-1">
             <img src="./assets/lens.png">
           </div>
-          <div class="col col2">
+          <div class="col col2 order-sm-1 order-lg-2">
             <div class="row">
               <h2>Our Virtual Headset Shine with Unique Features!</h2>
             </div>
@@ -116,7 +116,7 @@
                   <p class="p1">High-resolution OLED or LCD screens: Provide sharp and clear visuals.</p>
                 </div>
               </div>
-              <div class="col-lg-5">
+              <div class="col-lg-5 d-none d-lg-block">
                 <div class="row">
                   <p class="estblava"></p>
                   <p class="p1">High-resolution OLED or LCD screens: Provide sharp and clear visuals.</p>
@@ -135,7 +135,7 @@
         </div>
       </div>
 
-      <div class="contingut3">
+       <div class="contingut3">
         <div class="row">
           <div class="col mt-5">
             <div class="row">
@@ -163,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col colsup">
             <div class="superpos">
               <img src="./assets/play.png" class="play">
               <div class="twit">
@@ -315,13 +315,12 @@
                 </div>
               </div>
             </div>
-      </div>
+      </div> 
+    </div>
 
-    </div> -->
-
-    <!-- <footer>
-      <div class="part1 d-flex">
-        <div class="col mt-5 col1 d-flex flex-column justify-content-center align-items-center">
+    <footer>
+      <div class="part1 d-lg-flex ms-3">
+        <div class="col mt-5 col1 d-flex flex-column justify-content-lg-center align-items-lg-center">
           <div class="row">
             <img src="./assets/logo.png" alt="Logo" style="max-height: 40px;" class="logo">
           </div>
@@ -337,22 +336,24 @@
             <p class="p2">(+994) 199-28-786</p>
           </div>
         </div>
-        <div class="col mt-5">
-          <div class="row text-center">
-            <p class="p1">Menu</p>
-            <p class="p2">Home</p>
-            <p class="p2">Catalog</p>
-            <p class="p2">Features</p>
-            <p class="p2">Contact</p>
+        <div class="d-flex">
+          <div class="col-6 col-sm-1 mt-5">
+            <div class="row text-lg-center">
+              <p class="p1">Menu</p>
+              <p class="p2">Home</p>
+              <p class="p2">Catalog</p>
+              <p class="p2">Features</p>
+              <p class="p2">Contact</p>
+            </div>
           </div>
-        </div>
-        <div class="col mt-5 d-flex flex-column justify-content-center align-items-center">
-          <div class="row text-center">
-            <p class="p1">Company</p>
-            <p class="p2">Login</p>
-            <p class="p2">Sign Up</p>
-            <p class="p2">Privacy</p>
-            <p class="p2">Productes</p>
+          <div class="col mt-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="row text-lg-center">
+              <p class="p1">Company</p>
+              <p class="p2">Login</p>
+              <p class="p2">Sign Up</p>
+              <p class="p2">Privacy</p>
+              <p class="p2">Productes</p>
+            </div>
           </div>
         </div>
         <div class="col mt-5 col4 d-flex flex-column justify-content-center align-items-center">
@@ -361,7 +362,7 @@
             <p class="p2">Sure, please provide your email address to subscribe to newsletter</p>
             <div class="sub">
               <div class="input-group">
-                <input class="form-control" type="search" placeholder="Enter your mail..." aria-label="Buscar">
+                <input class="form-control w-sm-100" type="search" placeholder="Enter your mail..." aria-label="Buscar">
                 <div class="input-group-append w-50">
                     <button class="btn btn-primary" type="button">Subscribe</button>
                 </div>
@@ -372,7 +373,7 @@
       </div>
       <hr>
       <p class="p1 text-center">©️ 2023 Your Company Name. All rights reserved</p>
-    </footer> -->
+    </footer>
   </body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -39,10 +39,6 @@ html body h2 {
 html body #fons1 {
   background-image: url("assets/back1.jpg");
 }
-html body #fons1 .div1 {
-  margin-left: 200px;
-  margin-right: 200px;
-}
 html body #fons1 .div1 header {
   background-color: transparent;
 }
@@ -283,9 +279,6 @@ html body #part2 .contingut2 .col2 .estblava {
 html body #part2 .contingut2 .col2 .p1 {
   width: 350px;
 }
-html body #part2 .contingut3 {
-  margin-left: 200px;
-}
 html body #part2 .contingut3 .jane {
   width: 450px;
 }
@@ -514,13 +507,72 @@ html body #part2 footer div .sub .btn-primary {
   height: 60px;
   width: 100px;
 }
-html body #part2 footer div .col1 {
-  margin-left: 200px;
-}
-html body #part2 footer div .col4 {
-  margin-right: 200px;
-}
 html body #part2 footer hr {
   height: 3px;
   background: linear-gradient(to right, transparent, purple, transparent);
+}
+@media (max-width: 768px) {
+  html body #fons1 .div1 header .opacitatBuscador .btn {
+    background-color: transparent;
+  }
+  html body #fons1 .div1 {
+    margin-right: 200px;
+  }
+  html body #fons1 .div1 #part1 {
+    display: flex;
+    flex-direction: column;
+  }
+  html body #fons1 .div1 {
+    margin-left: 50px;
+  }
+  html body #fons1 .div1 #part1 #partdreta .dos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  html body #fons1 .div1 #part1 #partdreta .dos div .em2 {
+    margin-left: 0;
+  }
+  html body #fons1 .div1 #part1 #partdreta img {
+    width: 520px;
+    height: 440px;
+  }
+  html body #part2 .contingut2 .ulleres img {
+    height: 100%;
+    width: 600px;
+  }
+  html body #part2 .contingut3 .jane {
+    width: 100%;
+    font-size: 46px;
+  }
+  html body #part2 .contingut3 .superpos {
+    position: static;
+  }
+  html body #part2 .contingut3 .superpos .twit {
+    position: static;
+  }
+  html body #part2 .contingut3 .colll {
+    margin-top: 100px;
+  }
+  .colsup {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  #fons1 .div1 header .opacitatBuscador .btn {
+    background-color: transparent;
+  }
+  #fons1 .div1 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  html body #part2 .contingut3 {
+    margin-left: 200px;
+  }
+  html body #part2 footer div .col1 {
+    margin-left: 200px;
+  }
+  html body #part2 footer div .col4 {
+    margin-right: 200px;
+  }
 }
